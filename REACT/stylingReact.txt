@@ -1,0 +1,53 @@
+series: {
+
+artworks : [
+	{title : “untitled”, src: “…”}
+]
+}
+
+
+Untitled, 2018
+
+____________
+
+I love SASS/SCSS, but for large projects specificity becomes a pain in the a$$. Sure you could stick to methodologies such as EBM, but you end up having classes such as "project-chat__input", and I just don't like that, albeit it solves the specificity problem.
+With Styled-Components you can forget about classes, ids and specificity altogether, it compiles beautifully, it is extendable, it automatically adds vendor prefixes upon compilation, and you can better leverage component props to alter the style dynamically.
+
+You simply give each component its own Sass (or whatever else) file, import it as import styles from './component.sass', and then apply like so: <div className={styles.example} /> or <div className={styles['example']} />
+It gives you the power of CSS and completely eliminates CSS' namespacing issue. It's a marvel.
+
+
+our team does this also. and then we have a variables.scss and mixins.scss file for tokens and other shared stuff. so far so good i think :)
+
+Yep, on my projects I have a global-styles directory with stuff like global variables, utility classes, etc. Those can be easily applied as strings to className like usual.
+
+____________
+
+react inline styling
+
+We have lost something in process, though. Now all of our styling is tied to our JavaScript code. It is going to be difficult to perform large, sweeping changes to our codebase as we need to tweak a lot of components to achieve that.
+
+We can try to work against this by injecting a part of styling through props. A component could patch its style based on a provided one. This can be improved further by coming up with conventions that allow parts of style configuration to be mapped to some specific part. We just reinvented selectors on a small scale.
+
+_____________
+
+Styles encapsulated within components
+- Local by default
+- Ability to delete code with confidence
+- Style as a function of state
+- Support for shared constants (color, spacing, etc.)
+- Ability to use native CSS features (media queries, animations, etc.)
+I chose to use glamorous, a React styling library, because it addresses all of my wish list items with a simple API.
+
+Style as a function of state
+The typical way we handle state-dependent styling at iFixit is to define state-specific classes (e.g. .button-disabled) and apply that class to an element conditionally with JavaScript. This method works for simple cases but it can get complicated for more involved use cases. Ideally, I could define the style of a component as a function of the component’s state. This is similar to the way React renders the view as a function of the application state. 
+
+Support for shared constants (color, spacing, etc.)
+Site-wide constant values like colors, spacing, font sizes, breakpoints, etc. should be available to any component. A component should be able to import the constants like this: import { colors } from ‘./constants’. This will enforce visual consistency and limit the number of decisions I have to make while developing.
+
+Glamorous allows us to define styles as a function of the state, like this:
+props => ({ color: props.disabled ? ‘red’ : ‘blue’ })
+
+
+
+
