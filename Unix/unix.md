@@ -2,18 +2,15 @@
 
 
 
+`history | head -n` `history | tail -n`
+show either n cmds from the beginning OR the end of the input history 
+
+`$ ag [what your looking for] .`
 **Search** with Silver Searcher (**ag**) from your current dir (.)
 
-```bash
-$ ag [what your looking for] .
-```
-
+`$ find . -type f -exec grep [X] {} \;`
 **Search** with find (more powerful, but potentially slower)
 "find all files (f) from here (.), then exec(ute) the following command: grep containing [X]"
-
-```bash
-$ find . -type f -exec grep [X] {} \;
-```
 
 **Search** for your previous commands
 
@@ -44,7 +41,7 @@ move all files andeven dot files (with at least two characters after the dot) fr
 
 
 
-### Path
+### $PATH
 
 We use this variable to list all the locations (paths! :) ) to where our most common commands are found.
 

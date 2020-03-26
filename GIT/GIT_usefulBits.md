@@ -2,8 +2,12 @@
 
 ## Misc
 
-
-
+- show list of all available commands
+`git-TABTAB`
+  
+- show available git aliases
+`$ git alias`
+  
 - remove a file after it was staged:
 
   ```git checkout -- some/file``` 
