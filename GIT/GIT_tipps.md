@@ -2,7 +2,8 @@
 
 ##Tipps & Tricks
 
-
+`git branch -a`
+show all  branches (not just local ones)
 
 **fetch from upstream**
 
@@ -18,7 +19,7 @@ in VIM: : key and then type wq OR ZZ
 
 -----------------------
 
-###Forked Repos
+### Forked Repos
 
 change into your forked local repo directory
 

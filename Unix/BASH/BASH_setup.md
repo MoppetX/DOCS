@@ -1,6 +1,6 @@
 # BASH
 
-## Born Again Shell
+## Bourne Again Shell
 
 
 

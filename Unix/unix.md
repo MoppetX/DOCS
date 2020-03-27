@@ -2,8 +2,23 @@
 
 
 
+`$ !![optional]` 
+Repeats the last command, you can add onto it
+
 `history | head -n` `history | tail -n`
-show either n cmds from the beginning OR the end of the input history 
+show either n cmds from the beginning OR the end of the input history
+
+`$ du` 
+"disk usage", shows size of files in current DIR
+
+`$ man`
+shows linux manual
+
+`$ cat path/to/file`
+Will print contents of file (should be text) to terminal; careful with file sizes of binary files!
+
+`$ reset`
+for whn you haven't listened to the point above and need to reset your terminal window :) 
 
 `$ ag [what your looking for] .`
 **Search** with Silver Searcher (**ag**) from your current dir (.)
