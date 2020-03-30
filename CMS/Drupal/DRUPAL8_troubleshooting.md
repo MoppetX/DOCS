@@ -65,3 +65,7 @@ MAMP / Preferences / PHP / Cache: **choose OPcache**
 
 -------
 
+### login hidden?
+
+sitename/**user/login**
+
