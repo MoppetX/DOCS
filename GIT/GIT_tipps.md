@@ -1,6 +1,6 @@
 # GIT
 
-##Tipps & Tricks
+## Tipps & Tricks
 
 `git branch -a`
 show all  branches (not just local ones)
@@ -18,6 +18,14 @@ that will show you the names
 in VIM: : key and then type wq OR ZZ 
 
 -----------------------
+
+### Set Up git identities when working on many projects
+
+**HOW TO:** Micah.soy/posts/setting-up-git-identities/
+
+_________
+
+
 
 ### Forked Repos
 
