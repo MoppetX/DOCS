@@ -36,6 +36,10 @@
 
 - `git remote -v` will show you the remote repos currently connected
 
-- `git remote remove [origin/name]` will removed the named remote repo
+- `git remote remove [origin/name]` will remove the named remote repo
 
-- 
+-  `git log --author=<name>` show only logs by named author
+
+-   `git lg --author=Haithem --since='2 weeks ago'` only show logs for the specified time 
+
+- `reset --hard HEAD`

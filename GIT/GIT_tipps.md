@@ -6,16 +6,18 @@
 show all  branches (not just local ones)
 
 **fetch from upstream**
-
 ```$ git remote -v ```
 
 that will show you the names
-
 ```git fetch upstream```
 
 ```git merge upstream/master```
 
 in VIM: : key and then type wq OR ZZ 
+
+
+
+
 
 -----------------------
 
