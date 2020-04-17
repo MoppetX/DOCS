@@ -16,6 +16,9 @@
 
   ```git rm some/file```
 
+- create new branch
+`$ git checkout -b <branchName>`
+  
 - lists recent commands that involved the word `git` :
 
   ```$ history | grep git```
@@ -42,4 +45,8 @@
 
 -   `git lg --author=Haithem --since='2 weeks ago'` only show logs for the specified time 
 
-- `reset --hard HEAD`
+- reset ALL changes
+  `reset --hard HEAD`
+
+- Unstage the file to current commit (HEAD):
+  ` $ git reset HEAD <file>`

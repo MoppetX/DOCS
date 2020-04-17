@@ -2,6 +2,12 @@
 
 
 
+`ctrl D`
+to close a terminal an write out the bash history
+
+`^<toReplace>^<replaceWith>`
+Replace one
+
 `$ !![optional]` 
 Repeats the last command, you can add onto it
 

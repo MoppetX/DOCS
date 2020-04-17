@@ -16,8 +16,13 @@ that will show you the names
 in VIM: : key and then type wq OR ZZ 
 
 
+no upstream :
+```bash
+fatal: The current branch <YourBranch> has no upstream branch.
+To push the current branch and set the remote as upstream, use
 
-
+    git push --set-upstream origin <YourBranch>
+```
 
 -----------------------
 
@@ -50,12 +55,12 @@ Now your local repo is connected to two remote repos... your forked one and my o
 
 now we run a *fetch* (NOT a pull!) of my original using the easier to remember remote name
 
-$ git fetch upstream
+`$ git fetch upstream`
 
 Now we decide what branch to merge into our current branch (origin/master or just master for short)
 So this is saying 'git, would you please merge the contents of the upstream/master branch into my current one, [which is origin/master]'
 
-$ git merge upstream/master
+`$ git merge upstream/master`
 
 it might ask you for a comment as towhy you are merging.
 
