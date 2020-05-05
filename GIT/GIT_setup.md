@@ -38,7 +38,7 @@ ist all the settings Git can find
 `brew install git-extras` 
 enables e.g. **git-[TAB TAB]**
 
-`$ gitcconfig` opens .gitconfig in a nano session 
+`$ gitconfig` opens .gitconfig in a nano session 
 
 Save a .gitconfig file in $HOME, with at least the below input:
 
@@ -47,7 +47,7 @@ Save a .gitconfig file in $HOME, with at least the below input:
     alias = config --get-regexp alias
     br = branch
     ci = commit
-    cim = commit -m
+    com = commit -m
     ocmmit = commit
     commmit = commit
     commi = commit
