@@ -20,13 +20,11 @@ command line:
 ```dash
 drush cache-rebuild
 ```
-
 will clear ALL caches. If you don't want that, use this:
 
 ```dash
 drush cc 
 ```
-
 will give you a list of caches you can then target to delete
 
 ------
