@@ -50,3 +50,6 @@
 
 - Unstage the file to current commit (HEAD):
   ` $ git reset HEAD <file>`
+  
+- updating the $PATH cache
+  `hash -r`
