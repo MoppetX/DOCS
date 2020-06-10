@@ -6,7 +6,7 @@ to generate a new key
 `ssh-add -l` 
 to list available keys
 
-`ssh-add /path/to/secret/key`   
+`ssh-add /path/to/secret/key` 
 this adds the key to the list of keys ssh will try when logging in
 
 ```bash
@@ -19,3 +19,6 @@ ssh-add /Users/YOU/.ssh/private_rsa
 ssh-add -l
 ```
 
+For work: `ssh-add /Users/kdengl/.ssh/id_rsa`
+
+NWA-5900
