@@ -33,8 +33,6 @@ that will show you the names
 git fetch upstream
 git merge upstream/master
 ```
->>>>>>> Stashed changes
-
 in VIM: : key and then type wq OR ZZ 
 
 
@@ -64,8 +62,6 @@ A  lib/git.rb
 M  lib/simplegit.rb
 ?? LICENSE.txt
 ```
-
-New files that aren’t tracked have a `??` next to them, new files that have been added to the staging area have an `A`, modified files have an `M` and so on. There are two columns to the output — the left-hand column indicates the status of the staging area and the right-hand column indicates the status of the working tree. So for example in that output, the `README` file is modified in the working directory but not yet staged, while the `lib/simplegit.rb` file is modified and staged. The `Rakefile` was modified, staged and then modified again, so there are changes to it that are both staged and unstaged.
 
 
 
@@ -112,3 +108,5 @@ $ git push
 =======
 ```
 >>>>>>> Stashed changes
+
+```

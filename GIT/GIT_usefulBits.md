@@ -2,6 +2,12 @@
 
 ## Misc
 
+- A shorter command to delete a branch remotely: 
+`git push origin:<branch>`
+  
+- delete a branch remotely
+`git push <remote> --delete <branch>`
+  
 - show list of all available commands
 `git-TABTAB`
   

@@ -57,4 +57,43 @@ console.log(add(...arr));
 
 
 
+**Filter**
 
+we can do it slighty more elegant, by just passing the `Boolean` constructor function, respectively the `Number` constructor function to `.filter`:
+
+```js
+data = data.filter( Number );
+```
+
+That would do the job in this instance, to generally remove any *falsy* value, we would call
+
+```js
+data = data.filter( Boolean );
+```
+
+
+
+**destructuring**
+
+```
+const person = {
+  name: 'Fred',
+  age: 26,
+  work: {
+    job: 'Blogger'
+  }
+};const {work: {job} } = person;
+console.log(job); //prints: Blogger
+```
+
+**Note:** In the above code, the `work` reference isn’t destructured. Only the last nested property is assigned to the variable — in our case `job`. To get the `work` nested property as well, we need to do:
+
+```
+const {work, work: {job} } = person;
+```
+
+Now consider if the `work` property wasn’t available at all. In that case, you’d need to write the above destructuring expression in the following way:
+
+```
+const { work: { job = 'NA', salary = 'NA'} = {} } = person;
+```

@@ -32,5 +32,5 @@
 | `--committer`         | Only show commits in which the committer entry matches the specified string. |
 | `--grep`              | Only show commits with a commit message containing the string |
 | `-S`                  | Only show commits adding or removing code matching the string |
-| --no-merges						| Preventing the display of merge commits |
+| `--no-merges`				| Preventing the display of merge commits |
 
