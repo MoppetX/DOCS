@@ -1,4 +1,4 @@
-Wes is *cool*. **too** *cool* for school. 
+Wes is *cool*. **too** <u>cool</u> for school. 
 
 He _really_ loves himself! And we love him, ~~too~~!
 
@@ -12,10 +12,13 @@ this is a [LINK](https://google.com)
 [Hackeryou.com](http://hackeryou.com "This is mouseover text")
 another [LINK][1]
 
-.[ ]
+- [ ] incomplete
+- [x] completed
+
+
 
 middle of the page
-lorem [ipsuon][1] another way to do a LINK  [ipsuon][hack] 
+lorem [ipsum][1] another way to do a LINK  [ipsuon][hack] 
 lorem ipsuon 
 
 bottom page
@@ -65,7 +68,7 @@ another way for styling an image:
   * another step
     another indentation
     ```js
-  //good for in-line code blocks!
+    //good for in-line code blocks!
     ```
 
 1. order them

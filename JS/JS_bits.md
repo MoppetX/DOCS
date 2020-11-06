@@ -4,6 +4,17 @@
 
 
 
+ **&& operator** 
+
+has this "feature" where if both values aren't truthy, it returns the value of the falsy one:
+
+```javascript
+10 && true // 0
+2true && 0 // 0
+3false && true // false
+4true && '' // ''
+```
+
 **for-await-of loop**
 
 ```js
@@ -88,12 +99,48 @@ console.log(job); //prints: Blogger
 
 **Note:** In the above code, the `work` reference isn’t destructured. Only the last nested property is assigned to the variable — in our case `job`. To get the `work` nested property as well, we need to do:
 
-```
+```js
 const {work, work: {job} } = person;
 ```
 
 Now consider if the `work` property wasn’t available at all. In that case, you’d need to write the above destructuring expression in the following way:
 
-```
+```js
 const { work: { job = 'NA', salary = 'NA'} = {} } = person;
+```
+
+It’s also possible to skip items in case you don’t want to assign them to local variables. We use the comma operator for this:
+
+```js
+//skips the 2nd element
+const [first,,third] = arr;
+```
+
+Using the comma operator for a huge array might be a tedious task. Instead, we can use the object destructuring like syntax — by accessing elements with an index, as shown below:
+
+```js
+const arr = ['a','b','c','d'];const {0: first, 3: fourth} = arr;
+console.log(fourth) //d
+const {0: first, 3: fourth, 9: tenth = 'z'} = arr;
+```
+
+You can also access nested array elements in a fashion similar to objects:
+
+```js
+const arr = ['a', [1, 2, 3]]
+const [first, [one, two, three]] = arr;
+```
+
+Up until now, we’ve seen and used static keys for destructuring. But for objects with dynamic keys, you need to use computed properties.
+
+Computed properties are specified in square brackets, as shown below:
+
+```js
+const person = {
+  name: 'Fred',
+  work: {
+    job: 'Blogger'
+  }
+};let name = 'name'const { [name] : username } = person;
+console.log(username); //Fred
 ```
