@@ -24,7 +24,6 @@ that will show you the names
 ```git fetch upstream```
 
 ```git merge upstream/master```
-=======
 
 `$ git remote -v `
 that will show you the names
@@ -46,7 +45,17 @@ To push the current branch and set the remote as upstream, use
 
 -----------------------
 
+### cleaning up unreachable commits
 
+`git reflog`  stores a list of the previous branch pointers
+
+`git gc` repacks the repository into a more efficient structure
+
+check that all objects are present as expected: `git fsck`
+
+what is no longer referenced: `git fsck --unreachable`
+
+`git gc --prune=now`: clean up unreachable commits
 
 _________
 
@@ -99,14 +108,9 @@ it might ask you for a comment as towhy you are merging.
 
 then we can push all that back up to your forked repo
 
-$ git push origin master
+`$ git push origin master`
 
 which is just the long-hand for
 
-$ git push
-<<<<<<< Updated upstream
-=======
-```
->>>>>>> Stashed changes
+`$ git push`
 
-```

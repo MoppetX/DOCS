@@ -2,6 +2,9 @@
 
 
 
+`lsof -i:[PORT]`
+figure out what is listening on a certain port, then: `kill -9 [PID]`
+
 `ctrl D`
 to close a terminal an write out the bash history
 

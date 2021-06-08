@@ -6,7 +6,7 @@
 
 ### ENV VARs
 
-`export YOUR_ENV_VAR=<value>` to make your env var available to current environment; you can `unset YOU_ENV_VAR` at the end to get rid of it
+`export YOUR_ENV_VAR=<value>` to make your env var available to current environment; you can `unset YOUR_ENV_VAR` at the end to get rid of it
 
 #### use chrome debugger on a node file
 

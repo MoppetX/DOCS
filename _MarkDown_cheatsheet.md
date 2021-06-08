@@ -2,11 +2,14 @@ Wes is *cool*. **too** <u>cool</u> for school.
 
 He _really_ loves himself! And we love him, ~~too~~!
 
+cistrose öl / creme
+
 # WES BOSS
 ## WES BOSSY
 ### WES WOSSY
 #### WES WUSSY
 
+[Modidian Tracking Spreadsheet](https://docs.google.com/spreadsheets/d/1qx-MWBDoH5bAEFqiut1j_HE-GAuOphJeF4XDvmA3a14/edit#gid=1693576021)
 this is a [LINK](https://google.com)
 
 [Hackeryou.com](http://hackeryou.com "This is mouseover text")
@@ -17,7 +20,7 @@ another [LINK][1]
 
 
 
-middle of the page
+middle of the page/
 lorem [ipsum][1] another way to do a LINK  [ipsuon][hack] 
 lorem ipsuon 
 
@@ -67,6 +70,7 @@ another way for styling an image:
 1. chose recipes
   * another step
     another indentation
+    
     ```js
     //good for in-line code blocks!
     ```
